@@ -2546,7 +2546,7 @@ void PM_NoClip()
 //  running PM_AirMove, which doesn't crop velocity to maxspeed like the ground / other
 //  movement logic does.
 //-----------------------------------------------------------------------------
-void PM_PreventMegaBunnyJumping()
+/*void PM_PreventMegaBunnyJumping()
 {
 	const bool allowBunnyHopping = atoi(pmove->PM_Info_ValueForKey(pmove->physinfo, "bj")) == 1;
 
@@ -2576,7 +2576,7 @@ void PM_PreventMegaBunnyJumping()
 	fraction = (maxscaledspeed / spd) * 0.65; //Returns the modifier for the velocity
 
 	VectorScale(pmove->velocity, fraction, pmove->velocity); //Crop it down!.
-}
+}*/
 
 /*
 =============
@@ -2666,7 +2666,7 @@ void PM_Jump()
 	// In the air now.
 	pmove->onground = -1;
 
-	PM_PreventMegaBunnyJumping();
+	// PM_PreventMegaBunnyJumping();
 
 	// Don't play jump sounds while frozen.
 	if ((pmove->flags & FL_FROZEN) == 0)
