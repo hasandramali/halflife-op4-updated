@@ -209,10 +209,10 @@ bool CSniperRifle::GetItemInfo(ItemInfo* p)
 	p->pszAmmo1 = "762";
 	p->iMaxAmmo1 = SNIPERRIFLE_MAX_CARRY;
 	p->pszName = STRING(pev->classname);
-	p->pszAmmo2 = 0;
+	p->pszAmmo2 = NULL;
 	p->iMaxAmmo2 = WEAPON_NOCLIP;
 	p->iMaxClip = SNIPERRIFLE_MAX_CLIP;
-	p->iSlot = 5;
+	p->iSlot = 2;
 	p->iPosition = 2;
 	p->iFlags = 0;
 	p->iId = m_iId = WEAPON_SNIPERRIFLE;
